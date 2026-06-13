@@ -1,31 +1,296 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ПодборВакансий.PRO</title>
-</head>
-<body>
-<h1>ПодборВакансий.PRO</h1>
-<p>Актуальные вакансии в одном месте</p>
-<a href="https://t.me/Podbor_Vakansiybot?start=tiktok">Смотреть вакансии</a>
-<script>
-setTimeout(function(){
-window.location.href="https://t.me/Podbor_Vakansiybot?start=tiktok";
-},3000);
-</script>
-</body>
-</html>
-<!-- TikTok Pixel Code Start -->
+
+<!-- TikTok Pixel -->
+
 <script>
 !function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D8MO7MRC77U56UIVBN2G');
-  ttq.page();
+w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+ttq.load=function(e){var n=document.createElement("script");
+n.async=!0;n.src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid="+e;
+var s=document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(n,s)};
+ttq.load('D8MO7MRC77U56UIVBN2G');
+ttq.page();
 }(window, document, 'ttq');
 </script>
-<!-- TikTok Pixel Code End -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+background:#050505;
+color:#fff;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+min-height:100vh;
+}
+
+.left{
+flex:1;
+}
+
+.logo{
+font-size:42px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.logo span{
+color:#95ff00;
+}
+
+.subtitle{
+font-size:22px;
+color:#bcbcbc;
+margin-bottom:40px;
+}
+
+.title{
+font-size:84px;
+font-weight:900;
+line-height:0.95;
+margin-bottom:30px;
+}
+
+.green{
+color:#95ff00;
+}
+
+.features{
+display:flex;
+flex-direction:column;
+gap:18px;
+margin-bottom:40px;
+}
+
+.feature{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:22px;
+}
+
+.icon{
+width:48px;
+height:48px;
+border:2px solid #95ff00;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#95ff00;
+}
+
+.btn{
+display:inline-block;
+background:#95ff00;
+color:#000;
+padding:18px 34px;
+border-radius:14px;
+font-size:22px;
+font-weight:700;
+text-decoration:none;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+.right{
+flex:1;
+text-align:center;
+}
+
+.phone{
+width:100%;
+max-width:520px;
+border-radius:30px;
+box-shadow:0 0 60px rgba(149,255,0,.2);
+}
+
+.regions{
+padding:80px 0;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#101010;
+border:1px solid #1f1f1f;
+padding:24px;
+border-radius:18px;
+}
+
+.card h3{
+color:#95ff00;
+margin-bottom:10px;
+}
+
+.footer{
+padding:60px 0;
+text-align:center;
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+padding-top:50px;
+min-height:auto;
+}
+
+.title{
+font-size:56px;
+}
+
+.logo{
+font-size:34px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.feature{
+font-size:18px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="left">
+
+<div class="logo">
+ПодборВакансий.<span>PRO</span>
+</div>
+
+<div class="subtitle">
+Актуальные вакансии в одном месте
+</div>
+
+<div class="title">
+Подбор<br>
+<span class="green">актуальных</span><br>
+вакансий
+</div>
+
+<div class="features">
+
+<div class="feature">
+<div class="icon">🔍</div>
+<div>Разные направления</div>
+</div>
+
+<div class="feature">
+<div class="icon">📅</div>
+<div>Новые предложения ежедневно</div>
+</div>
+
+<div class="feature">
+<div class="icon">📍</div>
+<div>KZ • BY • UZ • Удалённо</div>
+</div>
+
+<div class="feature">
+<div class="icon">💻</div>
+<div>Удалённая и офисная работа</div>
+</div>
+
+</div>
+
+<a
+href="https://t.me/Podbor_Vakansiybot?start=tiktok"
+class="btn"
+onclick="ttq.track('ClickButton');">
+Смотреть вакансии </a>
+
+</div>
+
+<div class="right">
+<img src="phone.png" class="phone">
+</div>
+
+</section>
+
+<section class="regions">
+
+<h2 class="section-title">
+Доступные регионы
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🇰🇿 Казахстан</h3>
+Алматы • Астана • Шымкент
+</div>
+
+<div class="card">
+<h3>🇧🇾 Беларусь</h3>
+Минск • Брест • Гомель
+</div>
+
+<div class="card">
+<h3>🇺🇿 Узбекистан</h3>
+Ташкент • Самарканд • Бухара
+</div>
+
+<div class="card">
+<h3>🌍 Удалённо</h3>
+Вакансии для разных регионов
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+ПодборВакансий.PRO
+</div>
+
+</div>
+
+</body>
+</html>
